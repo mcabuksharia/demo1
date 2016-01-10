@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Most Importants</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @most_importants.each do |most_important| %>
+      <tr>
+        <td><%= most_important.name %></td>
+        <td><%= link_to 'Show', most_important %></td>
+        <td><%= link_to 'Edit', edit_most_important_path(most_important) %></td>
+        <td><%= link_to 'Destroy', most_important, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Most important', new_most_important_path %>

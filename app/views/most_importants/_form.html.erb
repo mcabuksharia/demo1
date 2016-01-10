@@ -1,0 +1,20 @@
+<%= form_for(@most_important) do |f| %>
+  <% if @most_important.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@most_important.errors.count, "error") %> prohibited this most_important from being saved:</h2>
+
+      <ul>
+      <% @most_important.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+  <li><%= f.label "Name" %>
+  </li><li><%= f.text_field :name%></li>
+
+    <%= f.submit %>
+  </div>
+<% end %>

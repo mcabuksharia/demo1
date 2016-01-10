@@ -1,0 +1,11 @@
+<h1>WellnessRooms#index</h1>
+<p>Find me in app/views/wellness_rooms/index.html.erb</p>
+<% @wellness_rooms.each do |f| %>
+	<li>Name: <%= f.name %></li>
+	<li>Desc: <%= f.desc %></li><%= link_to 'Show',wellness_room_path(f) %>
+	<li><%= link_to 'Edit',edit_wellness_room_path(f) %></li>
+	<li><%= link_to 'Delete',f, :method=>:delete %></li>
+
+<% end %>
+<%= link_to 'Create new',new_wellness_room_path %>
+

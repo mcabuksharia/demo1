@@ -1,0 +1,17 @@
+country:
+  id: 1
+  country_name: "india"
+  country_id: 101
+
+state:
+  id: 1
+  state_name: "H.P."
+  state_id: 1001
+  country_id: 101
+
+district:
+  id: 1
+  district_name: "kangra"
+  district_id: 3001
+  state_id: 1001
+  country_id: 101

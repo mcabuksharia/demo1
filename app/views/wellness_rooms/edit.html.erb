@@ -1,0 +1,7 @@
+<h1>WellnessRooms#edit</h1>
+<p>Find me in app/views/wellness_rooms/edit.html.erb</p>
+<%= form_for @wellness_room do |f| %>
+	Name:<%= f.text_field :name %>
+	Desc:<%= f.text_field :desc %>
+	<%= f.submit %>
+<% end %>

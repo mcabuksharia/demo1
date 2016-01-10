@@ -1,0 +1,5 @@
+<h1>WellnessRooms#show</h1>
+<p>Find me in app/views/wellness_rooms/show.html.erb</p>
+
+<li>Name: <%= @wellness_room.name %></li>
+<li>Desc: <%= @wellness_room.desc %> <%= link_to 'Delete', @wellness_room, method: :delete, :data =>{confirm:"Are you sure"} %></li>

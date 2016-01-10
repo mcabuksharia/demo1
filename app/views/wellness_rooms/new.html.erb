@@ -1,0 +1,8 @@
+<h1>WellnessRooms#new</h1>
+<p>Find me in app/views/wellness_rooms/new.html.erb</p>
+<%= form_for (@wellness_room) do |f| %>
+<li><%= f.label "Name" %></li><li><%= f.text_field :name %></li>
+<li><%= f.label "Desc" %></li><li><%= f.text_field :desc%></li>
+<li><%= f.submit%></li>
+<% end %>
+<%= link_to 'Show',@wellness_room %>
