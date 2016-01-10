@@ -40,7 +40,7 @@ group :development, :test do
 
   gem 'ruby-graphviz', '~> 1.2.2'
 
-  #gem 'devise'
+  gem 'devise'
 
   gem 'omniauth-facebook'
   # Access an IRB console on exception pages or by using <%= console %> in views
